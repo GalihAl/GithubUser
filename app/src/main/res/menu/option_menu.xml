@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:title="@string/menu_search"
+        android:icon = "@drawable/ic_menu_nav_search_white_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|always"/>
+    <item android:id="@+id/favorite"
+        android:icon = "@drawable/ic_menu_nav_favorite_white_24"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/button_favorite"/>
+    <item android:id="@+id/language"
+        android:icon = "@drawable/ic_menu_nav_language_24"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/button_language"/>
+    <item android:id="@+id/theme_mode"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.Switch"
+        android:actionLayout="@layout/dark_mode"
+        android:title="@string/button_theme"
+        android:checkable="true"/>
+
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_github_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/favoriteCheckbox"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="6dp"
+            android:button="@drawable/ic_favorite_btn"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_user_name" />
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/string_avatar"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/string_username"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/favoriteCheckbox"
+            app:layout_constraintStart_toEndOf="@+id/iv_photo"
+            app:layout_constraintTop_toTopOf="@+id/iv_photo" />
+
+        <TextView
+            android:id="@+id/tv_adres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/string_adress"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_user_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_user_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/string_company"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_adres"
+            app:layout_constraintStart_toStartOf="@+id/tv_adres"
+            app:layout_constraintTop_toBottomOf="@+id/tv_adres" />
+
+        <TextView
+            android:id="@+id/tv_follower_int"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/string_follower_10000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_company"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="@string/string_follower"
+            android:textColor="@color/main_header"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_follower_int"
+            app:layout_constraintStart_toEndOf="@+id/tv_follower_int" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/border_vertical_style"
+            android:contentDescription="@string/string_photo_avatar"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/tv_follower_int"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tv_following_int"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/string_following_10000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/tv_follower_int" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="@string/string_following"
+            android:textColor="@color/main_header"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_following_int"
+            app:layout_constraintStart_toEndOf="@+id/tv_following_int" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

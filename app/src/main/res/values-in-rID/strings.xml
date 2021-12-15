@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GithubUser</string>
+    <string name="string_github_user">Pengguna Github</string>
+    <string name="string_username">Nama Pengguna</string>
+    <string name="string_adress">Alamat</string>
+    <string name="string_follower_10000">10000</string>
+    <string name="string_following_10000">10000</string>
+    <string name="string_user_name">Nama Panggilan</string>
+    <string name="string_name">Nama</string>
+    <string name="string_location">Alamat</string>
+    <string name="string_company">Perusahaan</string>
+    <string name="string_repository_1000">1000</string>
+    <string name="string_repository">Repo</string>
+    <string name="btn_back_button">tombol kembali</string>
+    <string name="btn_share_button">tombol berbagi</string>
+    <string name="string_icon_location">ikon_lokasi</string>
+    <string name="string_icon_company">ikon_perusahaan</string>
+    <string name="string_following">Mengikuti</string>
+    <string name="string_avatar">avatar</string>
+    <string name="string_photo_avatar">photo avatar</string>
+    <string name="string_1000">1000</string>
+    <string name="string_follower">Pengikut</string>
+    <string name="search">cari pengguna</string>
+    <string name="search_hint">masukkan kata</string>
+    <string name="menu_search">cari</string>
+    <string name="hello_blank_fragment">hello blank fragment</string>
+    <string name="following">mengikuti</string>
+    <string name="follwer">pengikut</string>
+    <string name="string_detail">Detail</string>
+    <string name="github_user_logo">Github user</string>
+    <string name="no_followers">tidak ada pengikut</string>
+    <string name="no_following">tidak mengikuti</string>
+    <string name="button_language">bahasa</string>
+    <string name="button_theme">tema</string>
+    <string name="back">kembali</string>
+    <string name="button_favorite">favorit</string>
+    <string name="no_data">data kosong</string>
+</resources>
